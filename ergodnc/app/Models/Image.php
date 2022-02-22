@@ -10,6 +10,12 @@ class Image extends Model
 {
     use HasFactory;
 
+     /**
+     * Define the polymorphic relation.
+     *
+     * @return MorphTo
+     */
+
     public function resource(): MorphTo
     {
         return $this->morphTo();
