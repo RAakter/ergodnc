@@ -19,7 +19,7 @@
    
 7. Offices
 
-   ## List Offices Endpoint
+   #### List Offices Endpoint
    
        [] Show only approved and visible records
 
@@ -35,13 +35,13 @@
 
        [] Sort by distance if lat/lng provided. Otherwise, oldest first.
    
-   ## Show Office endpoint
+   #### Show Office endpoint
    
        [] Show count of previous reservations
 
        [] Include tags, images, and user
 
-   ## Create Office endpoint
+   #### Create Office endpoint
    
        [] Host must be authenticated & email verified
        
@@ -49,5 +49,5 @@
        
        [] Attach photos to offices endpoint
    
-   ## Tests
+   #### Tests
    
