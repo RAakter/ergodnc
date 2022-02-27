@@ -11,23 +11,43 @@
 5. Prepare resources
 6. Tags
 
-   -Routes
+   ## Routes
    
-   -Controller
+   ## Controller
    
-   -Tests
+   ## Tests
    
 7. Offices
 
-   -List Offices
+   ## List Offices Endpoint
    
-   -Read Office
+       [] Show only approved and visible records
+
+       [] Filter by hosts
+
+       [] Filter by users
+
+       [] Include tags, images, and user
+
+       [] Show count of previous reservations
+
+       [] Paginate
+
+       [] Sort by distance if lat/lng provided. Otherwise, oldest first.
    
-   -Create Office
+   ## Show Office endpoint
    
-   -Filter the offices returned
+       [] Show count of previous reservations
+
+       [] Include tags, images, and user
+
+   ## Create Office endpoint
    
-   -Paginate the list offices endpoint
+       [] Host must be authenticated & email verified
+       
+       [] Cannot fill 'approval_status'
+       
+       [] Attach photos to offices endpoint
    
-   -Tests
+   ## Tests
    
