@@ -20,9 +20,7 @@ class OfficeControllerTest extends TestCase
         $response = $this->get('/api/offices');
 
         $response->assertOk();
-
         $this->assertNotNull($response->json('data')[0]['id']);
-
         $this->assertCount(5, $response->json('data'));
     }
 }
