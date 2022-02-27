@@ -18,5 +18,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//tag
+//tags....
 Route::get('/tags', \App\Http\Controllers\TagController::class);
+
+//offices....
+Route::get('/offices', [\App\Http\Controllers\OfficeController::class, 'index']);
+

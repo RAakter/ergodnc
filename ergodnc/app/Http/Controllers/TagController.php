@@ -6,12 +6,12 @@ use App\Http\Resources\TagResource;
 use App\Models\Tag;
 use App\Http\Requests\StoreTagRequest;
 use App\Http\Requests\UpdateTagRequest;
-use Illuminate\Http\Resources\Json\ResourceCollection;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 
 class TagController extends Controller
 {
 
-    public function __invoke() : ResourceCollection
+    public function __invoke(): AnonymousResourceCollection
     {
         return TagResource::collection(
             Tag::all()

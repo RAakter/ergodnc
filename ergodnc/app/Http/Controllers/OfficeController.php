@@ -2,20 +2,30 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\OfficeResource;
 use App\Models\Office;
 use App\Http\Requests\StoreOfficeRequest;
 use App\Http\Requests\UpdateOfficeRequest;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Http\Response;
 
 class OfficeController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return AnonymousResourceCollection
      */
-    public function index()
+    public function index(): AnonymousResourceCollection
     {
-        //
+        $offices = Office::query()
+                   ->orderBy('id', 'DESC')
+//                 ->latest('id')
+                   ->get();
+
+        return OfficeResource::collection(
+            $offices
+        );
     }
 
     /**
