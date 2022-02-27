@@ -2,7 +2,7 @@
 
 # This is a Laravel Application.
 
-# TODO
+### TODO
 
 1. Prepare migrations
 2. Seed the initial tags
@@ -11,43 +11,43 @@
 5. Prepare resources
 6. Tags
 
-   ## Routes
+   #### - Routes
    
-   ## Controller
+   #### - Controller
    
-   ## Tests
+   #### - Tests
    
 7. Offices
 
-   #### List Offices Endpoint
+   #### - List Offices Endpoint
    
-       [] Show only approved and visible records
+          [] Show only approved and visible records
 
-       [] Filter by hosts
+          [] Filter by hosts
 
-       [] Filter by users
+          [] Filter by users
 
-       [] Include tags, images, and user
+          [] Include tags, images, and user
 
-       [] Show count of previous reservations
+          [] Show count of previous reservations
 
-       [] Paginate
+          [] Paginate
 
-       [] Sort by distance if lat/lng provided. Otherwise, oldest first.
+          [] Sort by distance if lat/lng provided. Otherwise, oldest first.
    
-   #### Show Office endpoint
+   #### - Show Office endpoint
    
-       [] Show count of previous reservations
+          [] Show count of previous reservations
 
-       [] Include tags, images, and user
+          [] Include tags, images, and user
 
-   #### Create Office endpoint
+   #### - Create Office endpoint
    
-       [] Host must be authenticated & email verified
-       
-       [] Cannot fill 'approval_status'
-       
-       [] Attach photos to offices endpoint
+          [] Host must be authenticated & email verified
+
+          [] Cannot fill 'approval_status'
+
+          [] Attach photos to offices endpoint
    
-   #### Tests
+   #### - Tests
    
