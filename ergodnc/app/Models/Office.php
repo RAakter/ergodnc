@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -52,7 +53,7 @@ class Office extends Model
     {
         return $this->hasMany(Reservation::class);
     }
-    
+
     /**
      * Define the relation with image.
      *
@@ -62,5 +63,16 @@ class Office extends Model
     public function images(): MorphMany
     {
         return $this->morphMany(Image::class, 'resource');
+    }
+
+    /**
+     * Define the relation with tag.
+     *
+     * @return BelongsToMany
+     */
+
+    public function tags(): BelongsToMany
+    {
+        return $this->belongsToMany(Tag::class, 'offices_tags');
     }
 }
